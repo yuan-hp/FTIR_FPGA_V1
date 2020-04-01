@@ -1,0 +1,8 @@
+15:15:18 **** Incremental Build of configuration Debug for project ftir_main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+15:15:19 Build Finished (took 1s.31ms)
+

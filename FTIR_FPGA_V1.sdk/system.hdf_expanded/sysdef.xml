@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="3" DIGEST="">
+	<TOOL_VERSION Version="2018.3"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="" PART="xc7z020clg484-2" ARCH="zynq" PACKAGE="clg484" DEVICE="7z020" SPEED="-2" LUT="53200" FF="106400" BRAM="140" DSP="220"/>
+	<HIERARCHY Name="design_1_wrapper"/>
+	<File Type="HW_HANDOFF" Name="design_1.hwh" DESIGN_HIERARCHY="design_1_i" BD_TYPE="DEFAULT_BD"/>
+	<File Type="BD_TCL" Name="design_1_bd.tcl"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h"/>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html"/>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl"/>
+	<File Type="BIT" Name="design_1_wrapper.bit"/>
+	<DRIVERS>
+		<DRIVER IP_VLNV="xilinx.com:user:AK5394_LF398:1.0">
+			<File PATH="drivers/AK5394_LF398_v1_0/data/AK5394_LF398.mdd"/>
+			<File PATH="drivers/AK5394_LF398_v1_0/data/AK5394_LF398.tcl"/>
+			<File PATH="drivers/AK5394_LF398_v1_0/src/Makefile"/>
+			<File PATH="drivers/AK5394_LF398_v1_0/src/AK5394_LF398.h"/>
+			<File PATH="drivers/AK5394_LF398_v1_0/src/AK5394_LF398.c"/>
+			<File PATH="drivers/AK5394_LF398_v1_0/src/AK5394_LF398_selftest.c"/>
+		</DRIVER>
+		<DRIVER IP_VLNV="xilinx.com:user:MCU_2_FPGA:1.0">
+			<File PATH="drivers/MCU_2_FPGA_v1_0/data/MCU_2_FPGA.mdd"/>
+			<File PATH="drivers/MCU_2_FPGA_v1_0/data/MCU_2_FPGA.tcl"/>
+			<File PATH="drivers/MCU_2_FPGA_v1_0/src/Makefile"/>
+			<File PATH="drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA.h"/>
+			<File PATH="drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA.c"/>
+			<File PATH="drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA_selftest.c"/>
+		</DRIVER>
+		<DRIVER IP_VLNV="xilinx.com:user:ax_pwm:1.0">
+			<File PATH="drivers/ax_pwm_v1_0/data/ax_pwm.mdd"/>
+			<File PATH="drivers/ax_pwm_v1_0/data/ax_pwm.tcl"/>
+			<File PATH="drivers/ax_pwm_v1_0/src/Makefile"/>
+			<File PATH="drivers/ax_pwm_v1_0/src/ax_pwm.h"/>
+			<File PATH="drivers/ax_pwm_v1_0/src/ax_pwm.c"/>
+			<File PATH="drivers/ax_pwm_v1_0/src/ax_pwm_selftest.c"/>
+		</DRIVER>
+	</DRIVERS>
+	<USEDRESOURCES LUT="2306" FF="2830" BRAM="0" DSP="0"/>
+</Project>
+

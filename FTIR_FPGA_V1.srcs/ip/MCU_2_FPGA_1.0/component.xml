@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>MCU_2_FPGA</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>MCU_2_FPGA_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>83fa5b0d</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>MCU_2_FPGA_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>83fa5b0d</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>980fb20d</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>dda4df14</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>wr_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">127</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>wr_data_ready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>wraddr_base</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ddr_write_done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>creg0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>creg1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>creg2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>creg3</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/MCU_2_FPGA_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/MCU_2_FPGA_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_90ca83ce</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/MCU_2_FPGA_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/MCU_2_FPGA_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/data/MCU_2_FPGA.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/data/MCU_2_FPGA.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/MCU_2_FPGA_v1_0/src/MCU_2_FPGA_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/MCU_2_FPGA_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_dda4df14</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">MCU_2_FPGA_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>MCU_2_FPGA_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-08-26T14:39:28Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58cdd4c1_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d95686a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c6ca74_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2daa4bac_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a3b1143_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40dc5e3a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98e1ec0_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f0c722e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54462dc_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7254b30e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47408489_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64561953_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66e05b63_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@377758b2_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2244ea5e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd4a5c7_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca85f6_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39f75119_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63ecc5a3_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6de87391_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31fca821_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c14b77_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@343cf92_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c8a1ae7_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7289d9dd_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a75c88_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62a01f0b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3fab91_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218dd4ae_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56fcb568_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71995984_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2af8a48b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16a252e2_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42451db4_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@281455f8_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ef95f6_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5141ead1_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5451fa30_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65cd9298_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@521b3de4_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16ac0ea_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68327338_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11a01525_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58f2cd06_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2037d971_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e94c0cc_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ae2664e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5336ba_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d9e3fc_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6daf4f84_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@433912ec_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a9e0638_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6133f8ef_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec339e9_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bfb046a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ccfcc1b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32dd8889_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e272fdb_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5407dc84_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5863f295_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67954851_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60cafd96_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66bc94ef_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@304d7cb2_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@768bef84_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19c88976_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d669bd2_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b10a4da_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@728970fb_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43d0faf5_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e2f0db_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dbda291_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60bc400c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77ad286c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d4aab_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ba1e21_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b83aece_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3924ae92_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50128c84_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d6b3921_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df80f32_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68bd14c9_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62b0d597_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ac3a939_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ee938b1_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5853b60_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fc1c9f3_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2302e6_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bff7e0d_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d2e0e15_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54ba445_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6377904f_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34b0da11_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74733e2b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6796c5ca_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dc0308c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c90afec_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8fa8ce_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fbf5955_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e99aac7_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae8e42a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dd1e1a4_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a4c908_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415eb4d4_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b63af7a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35a01e82_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5d579f_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72db1526_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@167ad129_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5068d371_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75dff7bc_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e1203c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f5c7341_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16400c56_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456e714f_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16d7690_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7f3c05_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7018f228_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fe0e1b3_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@799f5c35_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf511f7_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a03838b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160152fb_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14bcf241_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1544085d_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4313ed78_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@686c51fd_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7677f4d0_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ad52a30_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5011d56e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61149575_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2872bc78_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31620023_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78522a6f_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b896a8_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d1b6c7_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d54350a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@524759ff_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e19ca94_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bd64024_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12db913f_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16c3afa0_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@500cd33e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c8e0852_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47261a28_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f987583_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc9013e_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aba52bc_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e282aa_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57699b32_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31cdaa8b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bbb10f1_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/ip_repo/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d3ca42a_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e79ded_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b77bcf9_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b2c96b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6373e70c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2861ebb5_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312adaa6_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19c9f843_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755c1a15_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4462c2f0_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73ff3bff_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a3d5e5b_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@725db821_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39479088_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620aea3c_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b1fb1da_ARCHIVE_LOCATION">f:/Awork_space/LF398_Debug/Xilinx/pl_write_ddr_lite/ip/MCU_2_FPGA_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ea7a5221"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="f16b46d3"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7fa1affa"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

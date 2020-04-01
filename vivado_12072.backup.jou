@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 31 19:40:02 2019
+# Process ID: 12072
+# Current directory: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3960 C:\Users\PC-Lin\Desktop\MM1\FTIR_MoveM_V1_3\FTIR_FPGA_V1.xpr
+# Log file: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/vivado.log
+# Journal file: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.sdk -hwspec C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name AK5394_LF398_v1_0_project -directory C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.tmp/AK5394_LF398_v1_0_project c:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_3/FTIR_FPGA_V1.srcs/ip/AK5394_LF398_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project

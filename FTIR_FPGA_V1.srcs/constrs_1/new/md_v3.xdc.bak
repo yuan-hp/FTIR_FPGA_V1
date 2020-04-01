@@ -1,0 +1,9 @@
+set_property IOSTANDARD LVCMOS33 [get_ports FPGA_UART0_RX]
+
+set_property IOSTANDARD LVCMOS33 [get_ports FPGA_UART0_TX]
+
+set_property IOSTANDARD LVCMOS33 [get_ports pwm_0]
+
+set_property IOSTANDARD LVCMOS33 [get_ports FPGA_DHT11_DATA]
+
+

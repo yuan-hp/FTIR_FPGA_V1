@@ -1,0 +1,28 @@
+15:23:28 **** Auto Build of configuration Debug for project MirrorCtrl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/A_MirrorCtrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/A_MirrorCtrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MirrorCtrl_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/A_MirrorCtrl.d" -MT"src/A_MirrorCtrl.o" -o "src/A_MirrorCtrl.o" "../src/A_MirrorCtrl.c"
+In file included from ../src/system.h:37:0,
+                 from ../src/A_MirrorCtrl.c:48:
+../../MirrorCtrl_bsp/ps7_cortexa9_1/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/A_MirrorCtrl.c'
+' '
+'Building target: MirrorCtrl.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MirrorCtrl_bsp/ps7_cortexa9_1/lib -o "MirrorCtrl.elf"  ./src/A_MirrorCtrl.o ./src/HTimer.o ./src/Hak5394.o ./src/Haxi_pwm.o ./src/Hdac7631.o ./src/Hgpio.o ./src/Hmfreq.o ./src/Htas5111.o ./src/Htest.o ./src/PID.o ./src/platform.o ./src/system.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MirrorCtrl.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MirrorCtrl.elf  |tee "MirrorCtrl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126316	   3512	  39920	 169748	  29714	MirrorCtrl.elf
+'Finished building: MirrorCtrl.elf.size'
+' '
+
+15:23:32 Build Finished (took 4s.24ms)
+

@@ -1,0 +1,144 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port FPGA_DHT11_DATA -pg 1 -y 650 -defaultsOSRD
+preplace port FPGA_Switch -pg 1 -y 1220 -defaultsOSRD
+preplace port FPGA_AD_SCLK -pg 1 -y 630 -defaultsOSRD
+preplace port DDR -pg 1 -y -240 -defaultsOSRD
+preplace port FPGA_TAS_PWM_A -pg 1 -y 520 -defaultsOSRD
+preplace port FPGA_DAC_LDAC_A -pg 1 -y 1160 -defaultsOSRD
+preplace port FPGA_LASER_PULSE -pg 1 -y 530 -defaultsOSRD
+preplace port FPGA_TAS_PWM_B -pg 1 -y 540 -defaultsOSRD
+preplace port FPGA_DAC_LDAC_B -pg 1 -y 1180 -defaultsOSRD
+preplace port FPGA_DAC_SDO_A -pg 1 -y 1060 -defaultsOSRD
+preplace port FPGA_UART0_TX -pg 1 -y 800 -defaultsOSRD
+preplace port FPGA_TAS_OTWn -pg 1 -y 570 -defaultsOSRD
+preplace port FPGA_DAC_RST -pg 1 -y 1120 -defaultsOSRD
+preplace port FPGA_DAC_SDO_B -pg 1 -y 1080 -defaultsOSRD
+preplace port FPGA_DongJ_PWM_C0 -pg 1 -y -310 -defaultsOSRD
+preplace port LED2 -pg 1 -y -110 -defaultsOSRD
+preplace port FPGA_DongJ_PWM_C1 -pg 1 -y 670 -defaultsOSRD
+preplace port LED3 -pg 1 -y -130 -defaultsOSRD
+preplace port LED4 -pg 1 -y -150 -defaultsOSRD
+preplace port FPGA_SPI0_SCLK -pg 1 -y 740 -defaultsOSRD
+preplace port FPGA_TAS_SD -pg 1 -y 550 -defaultsOSRD
+preplace port FPGA_TAS_RESETn -pg 1 -y 560 -defaultsOSRD
+preplace port FPGA_UART0_RX -pg 1 -y 420 -defaultsOSRD
+preplace port FPGA_AD_ZCAL -pg 1 -y 690 -defaultsOSRD
+preplace port FPGA_AD_MCLK -pg 1 -y 450 -defaultsOSRD
+preplace port FPGA_AD_SDATA -pg 1 -y 590 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 310 -defaultsOSRD
+preplace port FPGA_DAC_LOAD -pg 1 -y 1140 -defaultsOSRD
+preplace port FPGA_DAC_CS -pg 1 -y 1100 -defaultsOSRD
+preplace port FPGA_SPI0_SDO -pg 1 -y 490 -defaultsOSRD
+preplace port pwm_0 -pg 1 -y -90 -defaultsOSRD
+preplace port FPGA_SPI0_CSn0 -pg 1 -y 610 -defaultsOSRD
+preplace port FPGA_AD_LRCK -pg 1 -y 650 -defaultsOSRD
+preplace port FPGA_DAC_SCK -pg 1 -y 1040 -defaultsOSRD
+preplace port FPGA_PWM_C2 -pg 1 -y 630 -defaultsOSRD
+preplace port FPGA_LOGIC_LF398 -pg 1 -y 470 -defaultsOSRD
+preplace port FPGA_AD_RSTn -pg 1 -y 380 -defaultsOSRD
+preplace port FPGA_AD_FSYNC -pg 1 -y 610 -defaultsOSRD
+preplace portBus FPGA_PWM_DIR_0 -pg 1 -y 360 -defaultsOSRD
+preplace portBus FPGA_PWM_0 -pg 1 -y 400 -defaultsOSRD
+preplace inst AXI_SIG_CFG_0 -pg 1 -lvl 3 -y 1220 -defaultsOSRD
+preplace inst axi_lite_wrddr_0 -pg 1 -lvl 8 -y -100 -defaultsOSRD
+preplace inst TAS5111_0 -pg 1 -lvl 6 -y 550 -defaultsOSRD
+preplace inst AK5394_LF398_0 -pg 1 -lvl 9 -y 1140 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 1220 -defaultsOSRD
+preplace inst rst_ps7_0_142M -pg 1 -lvl 5 -y 100 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 10 -y 1020 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 11 -y 220 -defaultsOSRD
+preplace inst FreqMeasure_0 -pg 1 -lvl 7 -y 90 -defaultsOSRD
+preplace inst ax_pwm_0 -pg 1 -lvl 11 -y 40 -defaultsOSRD
+preplace inst axi_debug_io_0 -pg 1 -lvl 8 -y 490 -defaultsOSRD
+preplace inst DAC7631_0 -pg 1 -lvl 6 -y 1110 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 1110 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst FPGA_PWM_0 -pg 1 -lvl 11 -y 430 -defaultsOSRD
+preplace inst Sensor_0 -pg 1 -lvl 6 -y 850 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 1270 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M09_AXI 1 5 1 1780
+preplace netloc ps7_0_axi_periph_M08_AXI 1 2 4 320 900 NJ 900 NJ 900 1600
+preplace netloc TAS5111_0_tas_reset 1 6 6 NJ 570 2430J 650 2980J 600 NJ 600 3860J 590 4270J
+preplace netloc AK5394_LF398_0_wr_data_ready 1 7 3 2550 800 N 800 3430
+preplace netloc FPGA_UART0_RX_1 1 0 6 NJ 420 N 420 N 420 N 420 1090 990 1600
+preplace netloc processing_system7_0_FIXED_IO 1 5 7 1740 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ
+preplace netloc axi_gpio_1_gpio_io_o 1 11 1 4190
+preplace netloc tas_sd_0_1 1 0 6 NJ 550 NJ 550 NJ 550 NJ 550 1130J 910 1750J
+preplace netloc axi_lite_wrddr_0_m00_axi_txn_done 1 8 1 3040
+preplace netloc ps7_0_axi_periph_M02_AXI 1 5 4 1670 400 N 400 2470 720 3070
+preplace netloc DAC7631_0_DAC_LDAC_A 1 6 6 NJ 1160 NJ 1160 2930J 1350 3510J 1160 NJ 1160 NJ
+preplace netloc DAC7631_0_DAC_RST 1 6 6 NJ 1120 NJ 1120 2950J 1320 3490J 1120 NJ 1120 NJ
+preplace netloc FPGA_AD_FSYNC_1 1 0 9 NJ 610 N 610 N 610 N 610 1080 940 N 940 N 940 N 940 3010
+preplace netloc tas_OTWn_0_1 1 0 6 NJ 570 NJ 570 NJ 570 NJ 570 1120J 920 1810J
+preplace netloc ps7_0_axi_periph_M04_AXI 1 5 6 1660 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc DAC7631_0_DAC_LDAC_B 1 6 6 NJ 1180 NJ 1180 2910J 1360 3530J 1180 NJ 1180 NJ
+preplace netloc FPGA_PWM_0_pwm 1 5 7 1890 420 N 420 2460 690 N 690 N 690 N 690 4240J
+preplace netloc FPGA_AD_LRCK_1 1 0 9 NJ 650 N 650 N 650 N 650 1050 950 N 950 2160 1000 N 1000 2990
+preplace netloc FPGA_Switch_1 1 0 3 NJ 1220 -50J 1230 300
+preplace netloc xlconcat_0_dout 1 4 1 1060
+preplace netloc DAC7631_0_DAC_SCK 1 6 6 NJ 1040 NJ 1040 2980J 1300 3460J 1110 3860J 1040 NJ
+preplace netloc AK5394_LF398_0_FPGA_AD_ZCAL 1 9 3 3500 680 N 680 4260
+preplace netloc ps7_0_axi_periph_M03_AXI 1 5 6 1690 410 NJ 410 2520J 620 2960J 400 NJ 400 NJ
+preplace netloc processing_system7_0_DDR 1 5 7 1700 -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ
+preplace netloc FreqMeasure_0_move_dir 1 7 2 NJ 90 3060
+preplace netloc AK5394_LF398_0_FPGA_AD_RSTn 1 9 3 3470 560 3820 550 4190
+preplace netloc TAS5111_0_pwm_a 1 6 6 NJ 530 2450J 640 NJ 640 NJ 640 NJ 640 4260J
+preplace netloc AK5394_LF398_0_FPGA_LOGIC_LF398 1 9 3 3460 570 3830J 560 4200J
+preplace netloc TAS5111_0_pwm_b 1 6 6 NJ 550 2440J 630 2970J 580 NJ 580 3840J 570 4230J
+preplace netloc rst_ps7_0_142M_mb_reset 1 0 6 -310J 40 NJ 40 N 40 N 40 1060 -40 1620
+preplace netloc AK5394_LF398_0_FPGA_AD_MCLK 1 9 3 3480 590 3850 580 4210
+preplace netloc ps7_0_axi_periph_M00_AXI 1 5 6 1650 0 N 0 2510 20 N 20 N 20 NJ
+preplace netloc FPGA_PWM_0_dir 1 5 7 1890 670 2150 660 N 660 N 660 N 660 3840 650 4220J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 2 1130 -20 1640
+preplace netloc ps7_0_axi_periph_M01_AXI 1 5 5 1820 930 N 930 N 930 N 930 3510
+preplace netloc processing_system7_0_SPI0_SS_O 1 5 7 1860 710 NJ 710 NJ 710 3030J 620 NJ 620 3880J 610 NJ
+preplace netloc axi_gpio_0_ip2intc_irpt 1 3 8 710J 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 3820
+preplace netloc DAC7631_0_DAC_CS 1 6 6 NJ 1100 NJ 1100 2940J 1340 3480J 1100 NJ 1100 NJ
+preplace netloc ps7_0_axi_periph_M10_AXI 1 5 1 1720
+preplace netloc FPGA_AD_SDATA_1 1 0 9 NJ 590 N 590 N 590 N 590 1070 970 N 970 N 970 N 970 3000
+preplace netloc ps7_0_axi_periph_M07_AXI 1 5 2 1680 60 NJ
+preplace netloc processing_system7_0_UART0_TX 1 5 7 1880 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 4230J
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 5 7 1830 700 NJ 700 NJ 700 3010J 610 NJ 610 3870J 600 4250J
+preplace netloc Net 1 6 6 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 4270
+preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 5 7 1730 -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 10 -40 1240 300 1320 N 1320 1100 -30 1770 100 2170 180 2480 990 3090 980 3520 440 3820
+preplace netloc DAC7631_0_DAC_SDO_A 1 6 6 NJ 1060 NJ 1060 2970J 1310 3500J 1130 3870J 1060 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 -310 1330 N 1330 N 1330 N 1330 1130 1040 1610
+preplace netloc DAC7631_0_DAC_SDO_B 1 6 6 NJ 1080 NJ 1080 2960J 1330 NJ 1330 NJ 1330 4230J
+preplace netloc processing_system7_0_FCLK_CLK2 1 5 6 1890 740 NJ 740 NJ 740 3000J 420 NJ 420 NJ
+preplace netloc ax_pwm_0_pwm 1 11 1 4190
+preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 5 7 1850 690 2170J 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc FPGA_AD_SCLK_1 1 0 9 NJ 630 N 630 N 630 N 630 1060 960 N 960 N 960 N 960 3020
+preplace netloc ps7_0_axi_periph_M06_AXI 1 5 1 1760
+preplace netloc AK5394_LF398_0_ddr_ad_data_inte 1 9 2 N 1220 3840
+preplace netloc processing_system7_0_TTC0_WAVE2_OUT 1 5 7 1840 680 NJ 680 NJ 680 3020J 630 NJ 630 NJ 630 NJ
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 5 7 1870 750 NJ 750 NJ 750 3030J 740 NJ 740 NJ 740 NJ
+preplace netloc rst_ps7_0_142M_peripheral_aresetn 1 1 10 -30 1250 310 840 N 840 1110 -10 1790 120 2150J 190 2500J 950 3030J 950 3530J 550 3810
+preplace netloc FPGA_LASER_PULSE_1 1 0 9 NJ 530 N 530 300 930 N 930 N 930 1800 730 2160 730 N 730 3050
+preplace netloc ps7_0_axi_periph_M05_AXI 1 5 3 1710 430 N 430 2490
+preplace netloc axi_lite_wrddr_0_M00_AXI 1 1 8 -30 980 N 980 N 980 N 980 N 980 NJ 980 NJ 980 2940J
+preplace netloc DAC7631_0_DAC_LOAD 1 6 6 NJ 1140 NJ 1140 2920J 1370 3520J 1140 NJ 1140 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 8 -30J 30 NJ 30 NJ 30 1050J -50 NJ -50 NJ -50 2520J 10 3080J
+preplace netloc AXI_SIG_CFG_0_laser_pulse_bf 1 3 1 700
+preplace netloc AK5394_LF398_0_wr_addr_buf 1 7 3 2540J 790 NJ 790 3440
+preplace netloc AXI_SIG_CFG_0_FPGA_Switch_bf 1 3 1 700
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 2 1130 200 1620
+preplace netloc processing_system7_0_M_AXI_GP1 1 4 2 1120 0 1630
+preplace netloc axi_interconnect_0_M00_AXI 1 2 3 N 1110 N 1110 1060
+preplace netloc AK5394_LF398_0_wr_data_buf 1 7 3 2530J 780 NJ 780 3450
+levelinfo -pg 1 -330 -140 150 560 960 1370 2020 2310 2740 3260 3680 4050 4340 -top -920 -bot 1670
+"
+}
+{
+   "da_axi4_cnt":"47",
+   "da_board_cnt":"7",
+   "da_clkrst_cnt":"36",
+   "da_ps7_cnt":"1"
+}

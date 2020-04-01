@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 31 17:05:25 2019
+# Process ID: 9856
+# Current directory: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4384 C:\Users\PC-Lin\Desktop\MM1\FTIR_MoveM_V1_2\FTIR_FPGA_V1.xpr
+# Log file: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_2/vivado.log
+# Journal file: C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_2/FTIR_FPGA_V1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/PC-Lin/Desktop/MM1/FTIR_MoveM_V1_2/FTIR_FPGA_V1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.M00_HAS_DATA_FIFO {1} CONFIG.M01_HAS_DATA_FIFO {1} CONFIG.M02_HAS_DATA_FIFO {1} CONFIG.M03_HAS_DATA_FIFO {1} CONFIG.M04_HAS_DATA_FIFO {1} CONFIG.M05_HAS_DATA_FIFO {1} CONFIG.M06_HAS_DATA_FIFO {1} CONFIG.M07_HAS_DATA_FIFO {1} CONFIG.M08_HAS_DATA_FIFO {1} CONFIG.M09_HAS_DATA_FIFO {1} CONFIG.S00_HAS_REGSLICE {3} CONFIG.S01_HAS_REGSLICE {3} CONFIG.S00_HAS_DATA_FIFO {1} CONFIG.S01_HAS_DATA_FIFO {1}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1

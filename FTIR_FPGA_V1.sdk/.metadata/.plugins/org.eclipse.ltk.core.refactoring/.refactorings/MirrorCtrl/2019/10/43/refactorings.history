@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MirrorCtrl/src/MirrorCtrl.c&apos; to &apos;A_MirrorCtrl.c&apos;" description="Rename resource &apos;MirrorCtrl.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/MirrorCtrl.c" name="A_MirrorCtrl.c" stamp="1571834437309" updateReferences="true"/>
+</session>

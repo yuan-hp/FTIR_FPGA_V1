@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER TAS5111
+	OPTION supported_peripherals = (TAS5111);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = TAS5111;
+END DRIVER

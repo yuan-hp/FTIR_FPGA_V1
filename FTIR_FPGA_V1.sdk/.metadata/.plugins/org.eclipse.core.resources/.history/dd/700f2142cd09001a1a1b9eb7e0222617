@@ -1,0 +1,96 @@
+/*
+ * Hdac7631.c
+ *
+ *  Created on: 2019年11月18日
+ *      Author: hpy
+ */
+
+#include "Htas5111.h"
+#include "TAS5111.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include "sleep.h"
+
+/*********************************************************************
+ * TAS5111初始化
+ ********************************************************************/
+void Htas5111_init()
+{
+	Htas5111_SeriesMode();//利用Haxi——pwm驱动TAS5111
+	Htas5111_SetSd();//正常mode下
+	Htas5111_Reset();//复位一次芯片
+	usleep(1000);
+	Htas5111_SetReset();
+}
+/*********************************************************************
+ * TAS5111级联模式
+ ********************************************************************/
+void Htas5111_SeriesMode()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value|= HTAS5111_USING_SERIES_MODE;
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111级联模式关闭
+ ********************************************************************/
+void Htas5111_SeriesModeClose()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value&= (~HTAS5111_USING_SERIES_MODE);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置RESET为1
+ ********************************************************************/
+void Htas5111_SetReset()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value |= (HTAS5111_SET_RESET);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置RESET为0
+ ********************************************************************/
+void Htas5111_Reset()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value &= (~HTAS5111_SET_RESET);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置在级联模式下的极性
+ ********************************************************************/
+void Htas5111_SetPolar()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value |= (HTAS5111_SERIES_SET_POLARITY);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置在级联模式下的极性为0
+ ********************************************************************/
+void Htas5111_ResetPolar()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value &= (~HTAS5111_SERIES_SET_POLARITY);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置sd为1
+ ********************************************************************/
+void Htas5111_SetSd()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value |= (HTAS5111_SET_SD);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}
+/*********************************************************************
+ * TAS5111设置sd为0
+ ********************************************************************/
+void Htas5111_ResetSd()
+{
+	u32 value = TAS5111_mReadReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET);
+	value &= (~HTAS5111_SET_SD);
+	TAS5111_mWriteReg(XPAR_TAS5111_0_S00_AXI_BASEADDR,TAS5111_S00_AXI_SLV_REG0_OFFSET,value);
+}

@@ -1,0 +1,261 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 20 15:28:39 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_TAS5111_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_TAS5111_0_0 (xilinx.com:user:TAS5111:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 20 11:37:01 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_TAS5111_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_TAS5111_0_0 (xilinx.com:user:TAS5111:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 20 09:22:00 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_TAS5111_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_TAS5111_0_0 (xilinx.com:user:TAS5111:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_TAS5111_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'tas_sd' in differs from original direction out
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 18 11:07:33 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_TAS5111_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_TAS5111_0_0 (xilinx.com:user:TAS5111:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_TAS5111_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'dir' width 3 differs from original width 1
+
+-Upgraded port 'inpwm' width 3 differs from original width 1
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 18 11:00:44 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_TAS5111_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_TAS5111_0_0 (xilinx.com:user:TAS5111:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_TAS5111_0_0'.
+
+
+-Upgrade has added interface 'tas_reset' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_TAS5111_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'dir'
+
+-Upgrade has added port 'inpwm'
+
+-Upgrade has added port 'pwm_a'
+
+-Upgrade has added port 'pwm_b'
+
+-Upgrade has added port 'tas_OTWn'
+
+-Upgrade has added port 'tas_reset'
+
+-Upgrade has added port 'tas_sd'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 11 20:03:08 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DAC7631_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_DAC7631_0_0 (xilinx.com:user:DAC7631:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 11 19:59:42 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DAC7631_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_DAC7631_0_0 (xilinx.com:user:DAC7631:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 11 19:16:43 2019
+| Host         : FPGA-Use running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DAC7631_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_DAC7631_0_0 (xilinx.com:user:DAC7631:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_DAC7631_0_0'.
+
+
+-Upgrade has added interface 'DAC_RST' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_DAC7631_0_0'. These changes may impact your design.
+
+
+-Upgrade has renamed port 'dac_cs' as 'DAC_CS'
+
+-Upgrade has renamed port 'dac_ldac_a' as 'DAC_LDAC_A'
+
+-Upgrade has renamed port 'dac_ldac_b' as 'DAC_LDAC_B'
+
+-Upgrade has renamed port 'dac_rst' as 'DAC_RST'
+
+-Upgrade has removed port 'dac_clk'
+
+-Upgrade has removed port 'dac_load_a'
+
+-Upgrade has removed port 'dac_load_b'
+
+-Upgrade has removed port 'dac_sdo'
+
+-Upgrade has added port 'DAC_LOAD'
+
+-Upgrade has added port 'DAC_SCK'
+
+-Upgrade has added port 'DAC_SDO_A'
+
+-Upgrade has added port 'DAC_SDO_B'
+
+

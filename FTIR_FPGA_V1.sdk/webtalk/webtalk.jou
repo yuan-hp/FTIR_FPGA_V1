@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Mon Nov 11 22:33:51 2019
+# Process ID: 234976
+# Current directory: F:/Awork_space/LF398_Debug/Xilinx/ftir_fpga_design/FTIR_FPGA_V1/FTIR_FPGA_V1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/Awork_space/LF398_Debug/Xilinx/ftir_fpga_design/FTIR_FPGA_V1/FTIR_FPGA_V1.sdk/webtalk/webtalk.log
+# Journal file: F:/Awork_space/LF398_Debug/Xilinx/ftir_fpga_design/FTIR_FPGA_V1/FTIR_FPGA_V1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

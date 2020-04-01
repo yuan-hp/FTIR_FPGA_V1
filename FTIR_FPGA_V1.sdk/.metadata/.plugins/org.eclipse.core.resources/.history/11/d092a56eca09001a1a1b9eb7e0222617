@@ -1,0 +1,16 @@
+/*
+ * Hdac7631.h
+ *驱动DAC7631
+ *  Created on: 2019年9月26日
+ *      Author: hpy
+ */
+#include "TAS5111.h"
+#ifndef SRC_HTAS5111_H_
+#define SRC_HTAS5111_H_
+
+//与硬件有关的宏参数
+#define HDAC7631_ENABLE 					(0x80000000)  //开启DAC7631
+
+
+
+#endif /* SRC_HDAC7631_H_ */
